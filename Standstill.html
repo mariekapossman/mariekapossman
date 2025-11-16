@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Standstill</title>
   <style>
-     body {
+    /* BODY STYLES */
+    body {
       background-color: lightgrey;
       color: black;
-      margin-left: 0.5in;
-      margin-right: 4.0in;
       font-family: Arial, sans-serif;
       line-height: 1.5;
+      text-align: center; /* centers all inline text by default */
+      margin: 0;
+      padding: 20px;
     }
 
+    /* LINKS */
     a {
       color: grey;
       display: inline-block;
       margin-bottom: 20px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
+    /* FIGURE & FIGCAPTION */
     figure {
-      margin: 0 0 30px 0;
+      margin: 30px auto; /* centers the figure and adds spacing */
+      max-width: 800px;  /* prevents it from stretching too wide */
     }
 
     figcaption {
       text-align: center;
-      margin-top: 5px;
-      font-size: 0.8em;
+      font-size: 0.9em;
+      margin-top: 10px;
       line-height: 1.3em;
     }
 
+    /* IMAGES */
     img {
       display: block;
-      max-width: auto px;      
-      height: 500px;
-      height: 100%
-      margin: 0 auto 15px auto;   /* FIXED */
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px auto; /* centers images horizontally + spacing below */
     }
 
+    /* MULTIPLE IMAGES IN A ROW */
     .image-row {
       text-align: center;
+      margin-bottom: 20px;
     }
 
     .image-row img {
       display: inline-block;
-      max-width: 300px; 
-      margin: 0 25px 15px 25px;
+      max-width: 300px;
+      margin: 0 10px 15px 10px;
       height: auto;
     }
   </style>
@@ -55,14 +66,22 @@
   <figure>
     <figcaption>
       Standstill <br>
-      <br>
-      2025, Quart cups, wet clay, cling wrap, cockroaches on the underside of a copper plate, natural repellant (cinnamon), hair <br>
+      2025, Quart cups, wet clay, cling wrap, cockroaches on the underside of a copper plate, natural repellant (cinnamon), hair
     </figcaption>
 
-    <img src="Stanstill4web1.jpg" alt="Standstill4"> <br>
-    <img src="DSCF5891 copy.jpeg" alt="Standstill2"> <br>
-    <img src="DSCF5993 copy.jpeg" alt="Standstill3"> <br>  
-    <img src="DSCF5976 copy.jpeg" alt="Standstill4"> <br>
+    <!-- Single full-width image -->
+    <img src="Stanstill4web1.jpg" alt="Standstill sculpture">
+
+    <!-- Multiple images in a row -->
+    <div class="image-row">
+      <img src="DSCF5891 copy.jpeg" alt="Standstill 2">
+      <img src="DSCF5993 copy.jpeg" alt="Standstill 3">
+      <img src="DSCF5976 copy.jpeg" alt="Standstill 4">
+    </div>
+
+    <figcaption>
+      Additional installation shots.
+    </figcaption>
   </figure>
 
 </body>
