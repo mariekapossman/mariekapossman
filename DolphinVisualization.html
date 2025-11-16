@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dolphin Visualization - Marieka Possman </title>
+  <title>Standstill</title>
   <style>
     /* BODY STYLES */
     body {
@@ -12,24 +12,24 @@
       line-height: 1.5;
       margin: 0;
       padding: 20px;
-      text-align: center; /* centers text and inline content */
-      position: relative; /* needed for absolute positioning of home link */
+      text-align: center; /* centers inline content */
+      position: relative; /* for absolute home arrow */
     }
 
-    /* HOME LINK IN TOP LEFT */
+    /* HOME LINK TOP-LEFT */
     .home-link {
       position: absolute;
       top: 20px;
       left: 20px;
       text-decoration: none;
-      color: grey;
       font-weight: bold;
+      color: purple; /* arrow color */
     }
 
     /* FIGURE & FIGCAPTION */
     figure {
-      margin: 60px auto 30px auto; /* centers figure and adds spacing */
-      max-width: 800px;  /* prevents it from stretching too wide */
+      margin: 60px auto 30px auto; /* center and spacing */
+      max-width: 800px;
     }
 
     figcaption {
@@ -39,12 +39,32 @@
       line-height: 1.3em;
     }
 
+    /* MATERIALS LIST UNDER FIRST IMAGE */
+    .materials {
+      margin-bottom: 40px; /* extra spacing under the materials list */
+      font-size: 0.9em;
+      line-height: 1.4em;
+    }
+
     /* IMAGES */
     img {
       display: block;
-      margin: 0 auto 20px auto; /* centers images and adds space below */
-      max-width: 600px;         /* controls max size */
-      width: 100%;              /* responsive scaling */
+      max-width: 500px;       /* smaller image size */
+      width: 100%;            /* responsive */
+      height: auto;
+      margin: 0 auto 20px auto; /* center and spacing below */
+    }
+
+    /* MULTIPLE IMAGES IN A ROW */
+    .image-row {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      display: inline-block;
+      max-width: 300px;
+      margin: 0 10px 15px 10px;
       height: auto;
     }
 
@@ -52,31 +72,27 @@
 </head>
 <body>
   <a href="index.html" class="home-link">&larr; home</a>
- <figure>
-    <img src="InstallShot1.jpg" alt="Installation shot">
-  <br>
+
+  <figure>
     <figcaption>
-      Dolphin Visualization <br>
-      <br>
-      cast glass, found glass, pleather, steel, clay, melon lard, melon skin and seeds, 8' x 3' x 2'
+      Standstill
     </figcaption>
 
-    <img src="dv7.jpg" alt="Dolphin Visualization">
-    <img src="dolphin visualization detail-8.jpg" alt="DV4">
-    <img src="dv17smaller.jpg" alt="DV17 smaller">
-    <img src="dvsmaller39.jpg" alt="DV39">
-    <img src="dvsmaller40.jpg" alt="DV40">
-    <img src="dvsmaller41.jpg" alt="DV41">
-    <img src="dvsmaller42.jpg" alt="DV42">
+    <!-- First image -->
+    <img src="Stanstill4web1.jpg" alt="Standstill 1">
+
+    <!-- Materials / description with extra spacing -->
+    <div class="materials">
+      2025, quart cups, wet clay, cling wrap, cockroaches on the underside of a copper plate, natural repellant (cinnamon), hair
+    </div>
+
+    <!-- Other images -->
+    <img src="DSCF5891 copy.jpeg" alt="Standstill 2">
+    <img src="DSCF5993 copy.jpeg" alt="Standstill 3">
+    <img src="DSCF5976 copy.jpeg" alt="Standstill 4">
 
     <figcaption>
-      Ear, 2025 <br>
-      Cast glass cup (pate de verre) propped up by a curtain rod wrapped in pleather.
-    </figcaption>
-
-    <figcaption>
-      Pin, 2025 <br>
-      The back of my (mom’s) head, hair held by a spiraling pin. Melon lard spreading into the paper and secured to the wall with glass cane.
+      Additional installation shots.
     </figcaption>
   </figure>
 </body>
