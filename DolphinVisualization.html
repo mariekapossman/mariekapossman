@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Dolphin Visualization</title>
   <style>
+    /* BODY STYLES */
     body {
       background-color: lightgrey;
       color: black;
@@ -11,19 +12,24 @@
       line-height: 1.5;
       margin: 0;
       padding: 20px;
-      text-align: center;
+      text-align: center; /* centers text and inline content */
+      position: relative; /* needed for absolute positioning of home link */
     }
 
-    a {
-      color: grey;
-      display: inline-block;
-      margin-bottom: 20px;
+    /* HOME LINK IN TOP LEFT */
+    .home-link {
+      position: absolute;
+      top: 20px;
+      left: 20px;
       text-decoration: none;
+      color: grey;
+      font-weight: bold;
     }
 
+    /* FIGURE & FIGCAPTION */
     figure {
-      margin: 30px auto;
-      max-width: 800px;
+      margin: 60px auto 30px auto; /* centers figure and adds spacing */
+      max-width: 800px;  /* prevents it from stretching too wide */
     }
 
     figcaption {
@@ -33,18 +39,19 @@
       line-height: 1.3em;
     }
 
+    /* IMAGES */
     img {
       display: block;
-      margin: 0 auto 20px auto;
-      max-width: 700px;
-      width: 100%;
+      margin: 0 auto 20px auto; /* centers images and adds space below */
+      max-width: 600px;         /* controls max size */
+      width: 100%;              /* responsive scaling */
       height: auto;
     }
 
   </style>
 </head>
 <body>
-  <a href="index.html">&larr; home</a>
+  <a href="index.html" class="home-link">&larr; home</a>
 
   <figure>
     <figcaption>
