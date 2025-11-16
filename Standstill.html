@@ -12,19 +12,22 @@
       margin: 0;
       padding: 20px;
       text-align: center;
+      position: relative; /* needed for absolute positioning of arrow */
     }
 
-    a.home-link {
+    /* Home arrow in top-left corner */
+    a.home-arrow {
+      color: #800080; /* purple */
       text-decoration: none;
-      display: inline-block;
       font-weight: bold;
-      margin-bottom: 20px;
-      color: unset; /* default browser purple */
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
 
     figure {
-      margin: 30px auto 30px auto;
-      max-width: 800px;
+      margin: 60px auto 30px auto; /* add top margin so content doesn't overlap arrow */
+      max-width: 700px;
     }
 
     figcaption {
@@ -34,50 +37,28 @@
       line-height: 1.3em;
     }
 
-    .materials {
-      margin-bottom: 40px;
-      font-size: 0.9em;
-      line-height: 1.4em;
-    }
-
     img {
       display: block;
-      max-width: 500px;
+      max-width: 600px;
       width: 100%;
       height: auto;
       margin: 0 auto 20px auto;
     }
-
-    .image-row {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .image-row img {
-      display: inline-block;
-      max-width: 300px;
-      margin: 0 10px 15px 10px;
-      height: auto;
-    }
   </style>
 </head>
 <body>
-  <a href="index.html" class="home-link">&larr; Home</a>
+  <a href="index.html" class="home-arrow">&larr; Home</a>
 
   <figure>
-
-    <img src="Stanstill4web1.jpg" alt="Standstill 1">
-  <figcaption>
-      Standstill
-    </figcaption>
-    <div class="materials">
+    <figcaption>
+      Standstill <br>
       2025, quart cups, wet clay, cling wrap, cockroaches on the underside of a copper plate, natural repellant (cinnamon), hair
-    </div>
+    </figcaption>
 
+    <img src="Stanstill4web1.jpg" alt="Standstill">
     <img src="DSCF5891 copy.jpeg" alt="Standstill 2">
     <img src="DSCF5993 copy.jpeg" alt="Standstill 3">
     <img src="DSCF5976 copy.jpeg" alt="Standstill 4">
-
   </figure>
 </body>
 </html>
