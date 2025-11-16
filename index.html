@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <style>
+<style>
   body {
-    margin: 100px;
-    list-style-type: none;
-    padding: 2px;
-    color: white;
     margin: 10px;
+    padding: 2px;
     min-height: 100vh;
     background-image: url("dv7.jpg");
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat; 
-    color: Grey;
+    color: grey; /* default text color */
   }
+
   a {
     color: grey;
+    text-decoration: none;
+  }
+
+  /* specifically style your name */
+  p.name {
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
   }
 </style>
 <body>
@@ -46,7 +57,7 @@
     setInterval(changeLetterColors, 70);
   </script>
 </marquee>
-  <p>   Marieka Possman (b.2002 Tokyo, Japan)</p>
+<p class="name">Marieka Possman (b.2002 Tokyo, Japan)</p>
   <br>
   <br>
   <ul>
