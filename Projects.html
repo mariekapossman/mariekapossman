@@ -22,7 +22,7 @@
     }
 
     figcaption {
-      text-align: left;
+      text-align: center;
       margin-top: 5px;
       font-size: 0.8em;
       line-height: 1.3em;
@@ -34,15 +34,19 @@
       max-width: 800px; 
       width: 100%;     
       height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 0 auto 15px auto;
     }
 
     /* For multiple images in one row */
     .image-row img {
-      display: inline-block;
-      max-width: 300px; 
-      margin-right: 50px;
-      height: auto;
+       text-align: center;  /* centers the inline-block images inside this container */
+}
+
+.image-row img {
+  display: inline-block;
+  max-width: 300px; 
+  margin: 0 25px 15px 25px;
+  height: auto;
     }
   </style>
 </head>
