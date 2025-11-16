@@ -28,39 +28,38 @@
       line-height: 1.3em;
     }
 
-   
     img {
       display: block;
       max-width: 700px; 
       width: 100%;     
       height: auto;
-      margin-bottom: 0 auto 15px auto;
+      margin: 0 auto 15px auto;   /* FIXED */
     }
 
-    /* For multiple images in one row */
-    .image-row img {
-       text-align: center;  /* centers the inline-block images inside this container */
-}
+    .image-row {
+      text-align: center;
+    }
 
-.image-row img {
-  display: inline-block;
-  max-width: 300px; 
-  margin: 0 25px 15px 25px;
-  height: auto;
+    .image-row img {
+      display: inline-block;
+      max-width: 300px; 
+      margin: 0 25px 15px 25px;
+      height: auto;
     }
   </style>
 </head>
+
 <body>
   <a href="index.html">&larr; home</a>
 
-    <figure>
-        <figcaption>
+  <figure>
+    <figcaption>
       Standstill, 2025 <br>
-      Anderson Ranch Arts Center, Snowmass Village, CO <br>
-          <br>
+      Anderson Ranch Arts Center, Snowmass Village, CO <br><br>
+    </figcaption>
 
-           <br>
-    <img src="Standstill1.jpg" alt="Standstill"> <br>
-    <br>
+    <img src="Standstill1.jpg" alt="Standstill">
+  </figure>
 
-  
+</body>
+</html>
